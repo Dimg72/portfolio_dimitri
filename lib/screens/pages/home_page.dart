@@ -96,7 +96,7 @@ class HomePage extends StatelessWidget {
         }
         else {
           return Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                       Column(
@@ -109,7 +109,7 @@ class HomePage extends StatelessWidget {
                        icon: Image.asset("assets/icons/git.png")),
                     ],),
                      Padding(
-                       padding: EdgeInsets.symmetric(horizontal: sizeWidth/25),
+                       padding: EdgeInsets.symmetric(horizontal: sizeWidth/95),
                        child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -120,13 +120,13 @@ class HomePage extends StatelessWidget {
                           ),
                           Image.asset("assets/pictures/profil.png", height: sizeHeigth/3, ),
                           Container(
-                            width: sizeHeigth/2,
+                            width: sizeHeigth/4,
                             child: Padding(
                               padding: EdgeInsets.only(bottom : sizeHeigth/25),
                               child: Text(
                               aboutMe(),
                                 textAlign: TextAlign.justify,
-                                style: TextStyle(fontSize: sizeHeigth/45),
+                                style: TextStyle(fontSize: sizeHeigth/50),
                                 ),
                               ),
                           ),
