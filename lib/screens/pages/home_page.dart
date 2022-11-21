@@ -22,9 +22,27 @@ class HomePage extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                      IconButton(onPressed: () {},
+                      IconButton(onPressed: () async {
+                         final url = Uri(
+                                scheme: 'https',
+                                host: 'www.linkedin.com',
+                                path: '/in/dimitri-gouliarmis-06a60a95/',   
+                                );
+                                if(await canLaunchUrl(url)) {
+                                  await launchUrl(url);
+                                }
+                      },
                        icon: Image.asset("assets/icons/linkedin.png")),
-                       IconButton(onPressed: () {},
+                       IconButton(onPressed: () async {
+                          final url = Uri(
+                                scheme: 'https',
+                                host: 'github.com',
+                                path: '/Dimg72',   
+                                );
+                                if(await canLaunchUrl(url)) {
+                                  await launchUrl(url);
+                                }
+                       },
                        icon: Image.asset("assets/icons/git.png")),
                     ],),
                      Padding(
@@ -52,9 +70,8 @@ class HomePage extends StatelessWidget {
                             child: Text("Contact me", style : TextStyle(color : Colors.white, fontSize: sizeHeigth/45)),
                             onPressed: () async {
                                 final url = Uri(
-                                  scheme: 'https',
-                                  host: 'raw.githubusercontent.com',
-                                  path: 'Dimg72/portfolio_dimitri/main/assets/pdf/_CV - Gouliarmis Dimitri.pdf',
+                                  scheme: 'mailto',
+                                  path: 'dimitri.gouli@gmail.com',
                                 );
                                 if(await canLaunchUrl(url)) {
                                   await launchUrl(url);
