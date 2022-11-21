@@ -39,6 +39,7 @@ class _HomeState extends State<Home> {
           // TextButton(onPressed: () {}, child : Text("Skills")),
           // TextButton(onPressed: () {}, child : Text("Portfolio")),
           // TextButton(onPressed: () {}, child : Text("Contact me"))
+          
         ],
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 1, 1, 2),
