@@ -62,7 +62,7 @@ class AboutMePage extends StatelessWidget {
                                   final url = Uri(
                                   scheme: 'https',
                                   host: 'raw.githubusercontent.com',
-                                  path: '/Dimg72/portfolio_dimitri/main/_CV%20-%20Gouliarmis%20Dimitri.pdf',
+                                  path: '/Dimg72/portfolio_dimitri/main/assets/pdf/_CV - Gouliarmis Dimitri.pdf',
                                 );
                                 if(await canLaunchUrl(url)) {
                                   await launchUrl(url);
@@ -128,7 +128,7 @@ class AboutMePage extends StatelessWidget {
                                 final url = Uri(
                                   scheme: 'https',
                                   host: 'raw.githubusercontent.com',
-                                  path: '/Dimg72/portfolio_dimitri/main/_CV%20-%20Gouliarmis%20Dimitri.pdf',
+                                  path: 'Dimg72/portfolio_dimitri/main/assets/pdf/_CV - Gouliarmis Dimitri.pdf',
                                 );
                                 if(await canLaunchUrl(url)) {
                                   await launchUrl(url);
