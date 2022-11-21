@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
     double sizeWidth = MediaQuery.of(context).size.width;
     return 
     LayoutBuilder(builder: (context, constraints) {
-        if(constraints.maxWidth > 1500 ) {
+        if(constraints.maxWidth > 1000 ) {
          return  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,

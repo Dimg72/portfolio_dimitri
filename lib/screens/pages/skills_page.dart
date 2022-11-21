@@ -69,6 +69,7 @@ class Skills extends StatelessWidget {
           return  Container(
                   color: Colors.blueGrey.shade700,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Skills", style : TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize : sizeHeigth/30 )),
                       SizedBox(height: sizeHeigth/10,),
