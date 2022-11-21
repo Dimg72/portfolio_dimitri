@@ -126,7 +126,7 @@ class HomePage extends StatelessWidget {
                               child: Text(
                               aboutMe(),
                                 textAlign: TextAlign.justify,
-                                style: TextStyle(fontSize: sizeHeigth/50),
+                                style: TextStyle(fontSize: sizeHeigth/55),
                                 ),
                               ),
                           ),

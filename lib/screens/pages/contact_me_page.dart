@@ -17,7 +17,7 @@ class ContactMePAge extends StatelessWidget {
                 child: Text("Contact me", style : TextStyle( fontSize: sizeHeigth/30, color: Colors.white),),
               ),
               SizedBox(height: sizeHeigth/20,),
-              SizedBox(height: sizeHeigth/20,width: sizeWidth/4,child: ElevatedButton.icon(onPressed: () async {
+              SizedBox(height: sizeHeigth/20,width: sizeWidth/3,child: ElevatedButton.icon(onPressed: () async {
                     final url = Uri(
                                   scheme: 'mailto',
                                   path: 'dimitri.gouli@gmail.com',
@@ -30,7 +30,7 @@ class ContactMePAge extends StatelessWidget {
                   backgroundColor: Colors.blueGrey.shade400,
               ))),
               SizedBox(height: sizeHeigth/30,),
-              SizedBox(height: sizeHeigth/20,width : sizeWidth/4,child: ElevatedButton.icon(onPressed: () async{
+              SizedBox(height: sizeHeigth/20,width : sizeWidth/3,child: ElevatedButton.icon(onPressed: () async{
                   final url = Uri(
                     scheme: 'https',
                     host: 'www.linkedin.com',
