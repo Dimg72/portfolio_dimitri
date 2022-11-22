@@ -36,26 +36,32 @@ class AboutMePage extends StatelessWidget {
                                 Text("Developper web, mobile and application since 2 years in differents languages. I'm always developping my skills and knowledges.", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45), textAlign: TextAlign.justify,),
                             ),
                             SizedBox(height: sizeHeigth/15,),
-                             Row(
-                              children: [
-                                Column(
+                            IntrinsicHeight(
+                              child: Row(
                                   children: [
-                                    Icon(Icons.looks_two_rounded, color: Colors.white, size: sizeHeigth/25,),
-                                    SizedBox(height: sizeHeigth/80,),
-                                    Text("years experiences", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
+                                    Column(
+                                      children: [
+                                        Icon(Icons.looks_two_rounded, color: Colors.white, size: sizeHeigth/25,),
+                                        SizedBox(height: sizeHeigth/80,),
+                                        Text("years experiences", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
+                                      ],
+                                    ),
+                                    VerticalDivider(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      thickness: 2,
+                                    ),
+                                    Column(
+                                      children: [
+                                        Icon(Icons.looks_3_rounded, color: Colors.white, size: sizeHeigth/25),
+                                        SizedBox(height: sizeHeigth/80,),
+                                        Text("projects in flutter", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
+                                      ],
+                                    ),
+                                    //Text("2 years experiences", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/50),),
                                   ],
                                 ),
-                                SizedBox(width: sizeWidth/80,),
-                                Column(
-                                  children: [
-                                    Icon(Icons.looks_3_rounded, color: Colors.white, size: sizeHeigth/25),
-                                    SizedBox(height: sizeHeigth/80,),
-                                    Text("projects in flutter", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
-                                  ],
-                                ),
-                                //Text("2 years experiences", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/50),),
-                              ],
                             ),
+                            
                             SizedBox(height: sizeHeigth/25,),
                             ElevatedButton.icon(
                               onPressed: () async {
@@ -100,28 +106,33 @@ class AboutMePage extends StatelessWidget {
                                 Text("Developper web, mobile and application since 2 years in differents langages. I'm developping my skill everytime", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45), textAlign: TextAlign.justify,),
                             ),
                             SizedBox(height: sizeHeigth/15,),
-                             Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Column(
-                                  children: [
-                                    Icon(Icons.looks_two_rounded, color: Colors.white, size: sizeHeigth/25,),
-                                    SizedBox(height: sizeHeigth/80,),
-                                    Text("years experiences", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
-                                  ],
-                                ),
-                                SizedBox(width: sizeWidth/80,),
-                                Column(
-                                  children: [
-                                    Icon(Icons.looks_3_rounded, color: Colors.white, size: sizeHeigth/25),
-                                    SizedBox(height: sizeHeigth/80,),
-                                    Text("projects in flutter", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
-                                  ],
-                                ),
-                                //Text("2 years experiences", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/50),),
-                              ],
+                             IntrinsicHeight(
+                               child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Column(
+                                    children: [
+                                      Icon(Icons.looks_two_rounded, color: Colors.white, size: sizeHeigth/25,),
+                                      SizedBox(height: sizeHeigth/80,),
+                                      Text("years experiences", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
+                                    ],
+                                  ),
+                                  VerticalDivider(
+                                    color: Color.fromARGB(255, 255, 255, 255),
+                                    thickness: 2,
+                                  ),
+                                  Column(
+                                    children: [
+                                      Icon(Icons.looks_3_rounded, color: Colors.white, size: sizeHeigth/25),
+                                      SizedBox(height: sizeHeigth/80,),
+                                      Text("projects in flutter", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
+                                    ],
+                                  ),
+                                  //Text("2 years experiences", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/50),),
+                                ],
                             ),
+                             ),
                             SizedBox(height: sizeHeigth/25,),
                             ElevatedButton.icon(
                               onPressed: () async {
