@@ -26,7 +26,7 @@ class SecondProjectPage extends StatelessWidget {
                    
             SizedBox(height: sizeHeigth/10,),
             Container(
-              width: sizeWidth/4,
+              width: sizeHeigth/3,
               height: sizeHeigth/4,
               decoration: BoxDecoration(
                 color: Colors.white,
