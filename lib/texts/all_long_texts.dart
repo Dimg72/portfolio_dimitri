@@ -16,5 +16,5 @@ String firstProjectInfo() {
 String secondProjectInfo() {
   return "In fact, this website was fully made with flutter. I did it to expand my skills in this language for web format. "
   + "Over time, I'll continue to complete my website. In below, you'll find all the repository for this project in Github."
-  +" To see more, you just have to click on the github logo on below:";
+  +" To see all the building project, you just have to click on the github logo on below:";
 }
