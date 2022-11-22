@@ -32,14 +32,8 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Welcome to my Website"),
-        actions: [
-          // TextButton(onPressed: () {}, child : Text("Home")),
-          // TextButton(onPressed: () {}, child : Text("About me")),
-          // TextButton(onPressed: () {}, child : Text("Skills")),
-          // TextButton(onPressed: () {}, child : Text("Portfolio")),
-          // TextButton(onPressed: () {}, child : Text("Contact me"))
-        ],
+        title: Text("Welcome to my Website", style : TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize : sizeHeigth/30 )),
+        actions: [],
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 1, 1, 2),
       ),

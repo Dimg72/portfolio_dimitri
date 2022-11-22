@@ -103,9 +103,27 @@ class HomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                      IconButton(onPressed: () {},
+                      IconButton(onPressed: () async {
+                        final url = Uri(
+                          scheme: 'https',
+                          host: 'www.linkedin.com',
+                          path: '/in/dimitri-gouliarmis-06a60a95/',
+                        );
+                        if(await canLaunchUrl(url)) {
+                          await launchUrl(url);
+                        } 
+                            },
                        icon: Image.asset("assets/icons/linkedin.png")),
-                       IconButton(onPressed: () {},
+                       IconButton(onPressed: () async {
+                          final url = Uri(
+                          scheme: 'https',
+                          host: 'github.com',
+                          path: '/Dimg72',
+                        );
+                        if(await canLaunchUrl(url)) {
+                          await launchUrl(url);
+                        } 
+                            },
                        icon: Image.asset("assets/icons/git.png")),
                     ],),
                      Padding(

@@ -48,11 +48,6 @@ class ContactMePAge extends StatelessWidget {
           ),
         );
   }
-    Future<void> _launchUrl() async{
-    final link = Uri.parse('https://www.linkedin.com/in/dimitri-gouliarmis-06a60a95/');
-    if (!await launchUrl(link, webOnlyWindowName: "_blank")) {
-    throw 'Could not launch $link';
-    }
-  }
+
 
 }
