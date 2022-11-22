@@ -9,6 +9,7 @@ import 'package:portefolio_dimitri/screens/pages/home_page.dart';
 import 'package:portefolio_dimitri/screens/pages/skills_page.dart';
 import 'package:portefolio_dimitri/screens/pages_projects/first_project_page.dart';
 import 'package:portefolio_dimitri/screens/pages_projects/second_project_page.dart';
+import 'package:portefolio_dimitri/screens/pages_projects/third_project_page.dart';
 import 'package:portefolio_dimitri/texts/all_long_texts.dart';
 import 'package:scroll_snap_list/scroll_snap_list.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -56,8 +57,11 @@ class _HomeState extends State<Home> {
             //First project
             FirstProjectPage(),
     
-            //second project
+            //Second project
             SecondProjectPage(),
+
+            //Third Project
+            ThirdProjectPage(),
 
             //Contact me Page
             ContactMePAge(),

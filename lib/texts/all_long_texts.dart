@@ -12,3 +12,9 @@ String firstProjectInfo() {
   " To use the applicaton the consumer just have only to scan products. Then, he will have information about it like all the additives and allergens presents in the product. Also, he can choose in the consumer parameter which allergies he have. " +
   "You can find below different screen of the application that i have made.";
 }
+
+String secondProjectInfo() {
+  return "In fact, this website was fully made with flutter. I did it to expand my skills in this language for web format. "
+  + "Over time, I'll continue to complete my website. In below, you'll find all the repository for this project in Github."
+  +" To see more, you just have to click on the github logo on below:";
+}

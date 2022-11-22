@@ -25,7 +25,7 @@ class ContactMePAge extends StatelessWidget {
                                 if(await canLaunchUrl(url)) {
                                   await launchUrl(url);
                                 }
-              }, icon: Icon(Icons.mail), label: Text("Mail"), 
+              }, icon: Icon(Icons.mail, size: sizeHeigth/33,), label: Text("Mail"), 
                 style : ElevatedButton.styleFrom(
                   backgroundColor: Colors.blueGrey.shade400,
               ))),

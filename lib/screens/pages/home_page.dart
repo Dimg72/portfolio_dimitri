@@ -153,9 +153,8 @@ class HomePage extends StatelessWidget {
                             child: Text("Contact me", style : TextStyle(color : Colors.white, fontSize: sizeHeigth/45)),
                             onPressed: () async {
                                 final url = Uri(
-                                  scheme: 'https',
-                                  host: 'raw.githubusercontent.com',
-                                  path: 'Dimg72/portfolio_dimitri/main/assets/pdf/_CV - Gouliarmis Dimitri.pdf',
+                                  scheme: 'mailto',
+                                  path: 'dimitri.gouli@gmail.com',
                                 );
                                 if(await canLaunchUrl(url)) {
                                   await launchUrl(url);
