@@ -18,8 +18,8 @@ class CustomLinearP extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text("$name", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
-            SizedBox(width: sizeWidth/10,),
-            Text("$value", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
+            // SizedBox(width: sizeWidth/10,),
+            // Text("$value", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45),),
           ],
         ),
         LinearPercentIndicator(

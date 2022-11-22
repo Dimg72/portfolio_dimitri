@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:scroll_snap_list/scroll_snap_list.dart';
 
 import '../../texts/all_long_texts.dart';
@@ -8,10 +6,8 @@ import '../../texts/all_long_texts.dart';
 class FirstProjectPage extends StatelessWidget {
   FirstProjectPage({super.key});
 
-  List<String> listPictureFP = ["assets/first_project/0.jpg", "assets/first_project/1.jpg", "assets/first_project/2.gif", "assets/first_project/3.jpg",
-  "assets/first_project/4.jpg", "assets/first_project/5.jpg" ];
-
-  List<String> listTitlePic = ["Home", "Information product", "Additives details", "Allergies details", "Others informations", "Setting allergies"];
+  List<String> listPictureFP = ["assets/first_project/0.jpg", "assets/first_project/1.jpg", "assets/first_project/3.jpg",
+  "assets/first_project/4.jpg", "assets/first_project/2.gif", "assets/first_project/5.png" ];
 
   @override
   Widget build(BuildContext context) {
@@ -33,20 +29,33 @@ class FirstProjectPage extends StatelessWidget {
                         textAlign: TextAlign.justify, 
                       ),),
                   ),
-                Expanded(child: 
-                ScrollSnapList(
-                  dynamicItemSize: true,
-                  itemSize: sizeHeigth/4,
-                  itemCount: listPictureFP.length,
-                  itemBuilder: (BuildContext context, int index ) {
-                    return Card(child : Image.asset(listPictureFP[index]));
-                  }, onItemFocus: (int ) {  },
-                )
+                                
+                Expanded(
+                  child: 
+                  ScrollSnapList(
+                    dynamicItemSize: true,
+                    itemSize: sizeHeigth/5,
+                    itemCount: listPictureFP.length,
+                    itemBuilder: (BuildContext context, int index ) {
+                      if(index == 4) {
+                        if(sizeWidth < 960) {
+                          return SizedBox(
+                          width: sizeWidth/2,
+                          child: Image.asset(listPictureFP[index],));
+                        } 
+                        else {
+                          return SizedBox(
+                          width: sizeWidth/5,
+                          child: Image.asset(listPictureFP[index],));
+                         }
+                      } 
+                      return Container(color: Colors.transparent,child : Image.asset(listPictureFP[index],),);
+                    }, onItemFocus: (int) {  },
+                  )
               ),
+
+
             ]),
-          )
-
-
-            ;
+          );
   }
 }

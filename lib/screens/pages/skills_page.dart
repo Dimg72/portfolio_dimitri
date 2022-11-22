@@ -103,7 +103,7 @@ class Skills extends StatelessWidget {
                             children: [
                               Text("Mobile developper", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/40),),
                               SizedBox(height: sizeHeigth/25,),
-                              const CustomLinearP(name: "Flutter", value: 90),
+                              const CustomLinearP(name: "Flutter", value: 70),
                             ],
                           ),
                         ],
