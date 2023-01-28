@@ -20,8 +20,8 @@ String secondProjectInfo() {
 }
 
 String thirdProjectInfo() {
-  return "This project was made with a friend whos is also liking the flutter framework. We have decided to make an application "
+  return "This project was made with a friend whos is also liking flutter framework. We have decided to make an application "
   + "where the user can transmit his mood every day. After weeks or month, he can have a resume with graphical indicator of his mood. "
-  + "For the moment the project is in construction we have working together on it et hope you'll enjoy when it will finished. Below you can click on the git picture to see the project on" +
+  + "For the moment the project is in construction. I hope you'll enjoy when it will be finished. Below you can click on the git picture to see the project on" +
   "gitHub.";
 }
