@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:portefolio_dimitri/texts/all_long_texts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ThirdProjectPage extends StatelessWidget {
@@ -20,6 +21,15 @@ class ThirdProjectPage extends StatelessWidget {
                 ),
           SizedBox(height: sizeHeigth/10,),
           
+          Container(
+                        width: sizeWidth/2,
+                        child: Text(thirdProjectInfo(), 
+                          style : TextStyle( fontSize: sizeHeigth/45), 
+                          textAlign: TextAlign.justify, 
+                        ),),
+                   
+            SizedBox(height: sizeHeigth/10,),
+
          Container(
               width: sizeHeigth/3,
               height: sizeHeigth/4,

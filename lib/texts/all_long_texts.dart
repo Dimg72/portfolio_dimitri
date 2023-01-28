@@ -18,3 +18,10 @@ String secondProjectInfo() {
   + "Over time, I'll continue to complete my website. In below, you'll find all the repository for this project in Github."
   +" To see more, you just have to click on the github logo on below:";
 }
+
+String thirdProjectInfo() {
+  return "This project was made with a friend whos is also liking the flutter framework. We have decided to make an application "
+  + "where the user can transmit his mood every day. After weeks or month, he can have a resume with graphical indicator of his mood. "
+  + "For the moment the project is in construction we have working together on it et hope you'll enjoy when it will finished. Below you can click on the git picture to see the project on" +
+  "gitHub.";
+}
