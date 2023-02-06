@@ -24,7 +24,7 @@ class ThirdProjectPage extends StatelessWidget {
           Container(
                         width: sizeWidth/2,
                         child: Text(thirdProjectInfo(), 
-                          style : TextStyle( fontSize: sizeHeigth/45), 
+                          style : TextStyle( fontSize: sizeHeigth/55), 
                           textAlign: TextAlign.justify, 
                         ),),
                    
