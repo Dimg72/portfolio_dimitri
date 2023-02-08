@@ -68,7 +68,7 @@ class AboutMePage extends StatelessWidget {
                                   final url = Uri(
                                   scheme: 'https',
                                   host: 'raw.githubusercontent.com',
-                                  path: '/Dimg72/portfolio_dimitri/main/assets/pdf/_CV - Gouliarmis Dimitri.pdf',
+                                  path: '/Dimg72/portfolio_dimitri/main/assets/pdf/Cv Gouliarmis Dimtiri.pdf',
                                 );
                                 if(await canLaunchUrl(url)) {
                                   await launchUrl(url);
