@@ -12,19 +12,20 @@ class ThirdProjectPage extends StatelessWidget {
     double sizeHeigth = MediaQuery.of(context).size.height;
     double sizeWidth = MediaQuery.of(context).size.width;
     return Container(
+      color: Color.fromARGB(255, 101, 93, 125),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Padding(
                   padding: EdgeInsets.only(top : sizeHeigth/30),
-                  child: Text("My third project", style : TextStyle( fontSize: sizeHeigth/30,),),
+                  child: Text("My third project", style : TextStyle(fontSize: sizeHeigth/30, color: Colors.white),),
                 ),
           SizedBox(height: sizeHeigth/10,),
           
           Container(
                         width: sizeWidth/2,
                         child: Text(thirdProjectInfo(), 
-                          style : TextStyle( fontSize: sizeHeigth/55), 
+                          style : TextStyle( fontSize: sizeHeigth/55, color: Colors.white), 
                           textAlign: TextAlign.justify, 
                         ),),
                    
