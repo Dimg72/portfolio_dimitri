@@ -33,7 +33,7 @@ class AboutMePage extends StatelessWidget {
                         children: [
                           Container(width: sizeHeigth/3,
                             child: 
-                                Text("Developper web, mobile and application since 2 years in differents languages. I'm always developping my skills and knowledges.", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45), textAlign: TextAlign.justify,),
+                                Text("Developper web, mobile and application since 2 years in differents languages. I'm always developping my skills and knowledges. I also have a business school master degree and a conceptor and developer first year master degree.", style : TextStyle(color: Colors.white, fontSize: sizeHeigth/45), textAlign: TextAlign.justify,),
                             ),
                             SizedBox(height: sizeHeigth/15,),
                             IntrinsicHeight(
